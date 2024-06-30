@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+    box-sizing: border-box;
+
+}
+
+form{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    color: #04146c;
+    font-size: 18pt;
+    font-weight: 700;
+    margin: 20px ;
+}
+
+input,button{
+    width: 500px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding:10px;
+    display: block;
+    border-radius: 5px;
+    border: none;
+}
+
+input{
+    font-size: 14pt;
+    color: #414166;
+    font-weight: 400;
+    border: solid 1px gray;
+}
+
+hr{
+    border: 1px solid gray;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+button{
+    font-size: 15pt;
+    background-color: #0a2ff1;
+    color: white;
+    font-weight: 600;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: #0a2ff1;
+    font-weight: 400;
+    font-size: 14pt;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+@media (max-width:1023px){
+    form{
+        width: 100%;
+    }
+
+    input, button{
+        width: 80%;
+        height: auto;
+        font-size: 1em;
+    }
+
+    hr{
+        width: 80%;
+    }
+}

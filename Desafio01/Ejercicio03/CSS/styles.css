@@ -1,0 +1,45 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+:root{
+    --color-Azul: #0a2ff1;
+}
+
+.bg-blanco{
+    background-color: white;
+}
+
+.color-azul{
+    color: var(--color-Azul);
+}
+
+.bg-negro{
+    background-color: black;
+}
+
+.color-blanco{
+    color: white;
+}
+
+.color-negro{
+    color: black;
+}
+
+.black{
+    font-weight: 900;
+}
+
+.semibold{
+    font-weight: 600;
+}
+
+.contenedor{
+    border-top: solid 10px #0a2ff1;
+    border-bottom: solid 10px #0a2ff1;
+}

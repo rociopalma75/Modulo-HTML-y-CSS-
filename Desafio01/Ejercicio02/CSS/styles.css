@@ -1,0 +1,27 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+p:nth-child(odd){
+    background-color: black;
+    color: white;
+}
+
+p:nth-child(even){
+    background-color: white;
+    color: black;
+}
+
+.black{
+    font-weight: 900;
+}
+
+.semibold{
+    font-weight: 600;
+}
+

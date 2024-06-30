@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-Azul-Fuerte : #0a2ff1;
+    --color-Azul-Claro : #04146c;
+    --color-Azul-Opaco : #8a9af1;
+}
+
+body{
+    background-color:  #edf7ff;
+}
+
+.MuseoModerno{
+    font-family: "MuseoModerno", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.Asap{
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 117.33px ;
+    color: var(--color-Azul-Fuerte);
+    text-align: center;
+}
+
+h3{
+    font-size: 52px;
+    font-weight: 400;
+    color: var(--color-Azul-Fuerte);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p{
+    font-size: 33.33px;
+    font-weight: 400;
+    color: var(--color-Azul-Claro);
+    margin: 20px;
+}
+
+.titulo-list{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-Azul-Fuerte);
+}
+
+ul{
+    margin-left: 40px;
+}
+
+li{
+    font-weight: 700;
+    color: var(--color-Azul-Claro);
+}
+
+footer p{
+    font-weight: 700;
+    color: var(--color-Azul-Opaco);
+    font-size: 198.66px;
+}
