@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-azul-principal: #04146c;
+    --color-azul-secundario: #0a2ff1;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    gap: 2em;
+    align-items: center;
+    padding: 20px;
+}
+
+#logo{
+    width: 5%;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18pt;
+    color: var(--color-azul-principal);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.active{
+    font-weight: 700;
+}
+
+a:hover{
+    background-color: rgba(216, 204, 204, 0.493);
+}
+
+main{
+    margin-left: 40px;
+}
+
+p:first-child{
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 34pt;
+    color: #2c00cc;
+}
+
+p:nth-child(2){
+    font-family: "Roboto", sans-serif;
+    font-size: 23pt;
+    color: #04146c;
+    font-weight: 400;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    gap: 10px;
+}
+
+form label{
+    font-family: "Roboto", sans-serif;
+    color: #04146c;
+    font-size: 23pt;
+    font-weight: 700;
+}
+
+span{
+    color: red;
+}
+
+form input, textarea{
+    width: 500px;
+    padding: 5px;
+}
+
+form input{
+    height: 50px;
+}
+
+form textarea{
+    height: 100px;
+}
+
+#reset, #submit{
+    font-family: "Roboto Slab", serif;
+    font-size: 24pt;
+    font-weight: 700;
+    width: 25%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+#reset{
+    background-color: #f98500;
+    color: white;
+}
+
+#submit{
+    background-color: #2c00cc;
+    color: white;
+}
+
+.acciones{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+footer{
+    background-color: #0a2ff1;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0 ;
+    bottom: 0;
+    
+    img{
+        width: 5%;
+    }
+}

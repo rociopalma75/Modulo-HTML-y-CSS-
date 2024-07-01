@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 2</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../assets/M5-logo-azul.svg" id="logo" alt="logo">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#" class="active">Contacto</a></li>
+                <li><a href="./detalle.html">Detalle</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>¿Querés que nos contactemos con vos?</p>
+        <p>Dejanos tu consulta: </p>
+
+        <form action="codigo.php">
+            <label for="nombre">Nombre completo:<span>*</span> </label> 
+            <input type="text" name="nombre" id="nombre" required>
+
+            <label for="email">Email: <span>*</span></label>
+            <input type="email" name="email" id="email" placeholder="info@gmail.com" required>
+
+            <label for="comentario">Comentario: <span>*</span></label>
+            <textarea name="comentario" id="comentario" required></textarea>
+
+            <div class="acciones">
+                <input type="reset" value="Resetear" id="reset">
+                <input type="submit" value="Enviar" id="submit">    
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <img src="../assets/M5-logo-blanco.svg" alt="logo">
+    </footer>
+</body>
+
+</html>
