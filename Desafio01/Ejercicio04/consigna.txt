@@ -1,0 +1,60 @@
+Creación de una Página Web Simple con HTML y CSS Externo
+Objetivos del ejercicio
+
+    Repasar el uso de etiquetas HTML para crear encabezados, párrafos y listas.
+    Practicar la aplicación de estilos CSS externos para definir color, fondo, tamaño de fuente y tipo de fuente.
+
+Consigna del ejercicio
+
+    Crea un archivo HTML llamado index.html.
+    Crea un archivo CSS llamado styles.css.
+    En index.html, incluye:
+        Un encabezado principal (<h1>) con el título "Mi Página Web".
+        Un párrafo (<p>) con una breve descripción sobre el contenido de la página.
+        Una lista no ordenada (<ul>) con tres elementos que representen tres hobbies o intereses personales.
+    En styles.css, aplica los siguientes estilos:
+        Cambia el color del texto del encabezado principal a azul.
+        Establece un color de fondo gris claro para toda la página.
+        Ajusta el tamaño de la fuente del párrafo a 16px.
+        Aplica la fuente Arial a todo el texto de la página.
+
+Resolución del ejercicio
+Archivo index.html
+
+html
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Mi Página Web</h1>
+    <p>Bienvenidos a mi página web. Aquí encontrarás información sobre mis hobbies e intereses.</p>
+    <ul>
+        <li>Leer libros</li>
+        <li>Escuchar música</li>
+        <li>Viajar</li>
+    </ul>
+</body>
+</html>
+
+Archivo styles.css
+
+css
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    font-size: 16px;
+}

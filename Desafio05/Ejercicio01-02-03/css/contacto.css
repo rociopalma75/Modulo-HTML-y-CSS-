@@ -13,43 +13,6 @@
     --color-azul-secundario: #0a2ff1;
 }
 
-nav{
-    display: flex;
-    width: 100%;
-    gap: 2em;
-    align-items: center;
-    padding: 20px;
-}
-
-#logo{
-    width: 5%;
-}
-
-nav ul{
-    list-style-type: none;
-    display: flex;
-    gap: 2em;
-}
-
-a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 18pt;
-    color: var(--color-azul-principal);
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.active{
-    font-weight: 700;
-}
-
-a:hover{
-    background-color: rgba(216, 204, 204, 0.493);
-}
-
 main{
     margin-left: 40px;
 }
@@ -127,14 +90,3 @@ form textarea{
     gap: 2em;
 }
 
-footer{
-    background-color: #0a2ff1;
-    position: fixed;
-    width: 100%;
-    padding: 10px 0 ;
-    bottom: 0;
-    
-    img{
-        width: 5%;
-    }
-}

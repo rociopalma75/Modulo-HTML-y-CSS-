@@ -3,6 +3,8 @@
 body{
     font-family: "Poppins", sans-serif;
     margin: 40px;
+    width: 50%;
+    margin: auto;
 }
 
 :root{
@@ -26,6 +28,24 @@ p{
 }
 
 img{
+    display: block;
     width: 25%;
-    background: url(../assets/fondo.JPG);
+    background-color: var(--background-img);
+    background-image: url(../assets/fondo.JPG);
+    background-size: contain;
+}
+
+@media (max-width:834px){
+    body{
+        width: 75%;
+    }
+
+    h1{
+        font-size: calc(59pt/2);
+    }
+
+    p{
+        font-size: calc(23pt/2);
+    }
+
 }

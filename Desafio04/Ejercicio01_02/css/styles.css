@@ -7,10 +7,14 @@
     box-sizing: border-box;
 }
 
+body{
+    background: url(../assets/M4-desafio1-fondo.png);
+    background-size: cover;
+}
+
 .contenedor-form{
     width: 50%;
     margin: auto;
-    background: url(../assets/M4-desafio1-fondo.png);
 }
 
 h1{
