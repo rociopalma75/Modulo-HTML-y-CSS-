@@ -1,0 +1,31 @@
+#form{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+    margin: auto;
+    
+    input{
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+
+    #mensaje-form{
+        align-self: center;
+        font-weight: 700;
+    }
+}
+
+
+
+button{
+    background-color:#29AB87;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    width: 50%;
+    align-self: center;
+}
