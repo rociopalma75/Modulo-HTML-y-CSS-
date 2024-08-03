@@ -8,6 +8,24 @@
     list-style: none;
 }
 
+@keyframes to-scale {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@keyframes to-width{
+    0%{
+        width: 50%;
+    }
+    100%{
+        width: 100%;
+    }
+} 
+
 body{
     background-color: rgb(242, 233, 226);
 }
@@ -20,23 +38,23 @@ body{
 }
 
 .container{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     display: flex;
+    flex-flow: row wrap;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .seccionToDo, .seccionTasks{
-    max-width: 45%;
+    max-width: 90%;
     width: 600px;
     height: fit-content;
     background-color: rgba(255,255,255,.7);
     color: black;
     padding: 20px;
     border-radius: 5px;
-    margin: auto;
+    animation: to-scale 2s ease;
 }
 
 .seccionToDo{
@@ -46,30 +64,21 @@ body{
 li{
     margin: 5px;
     user-select: none; /*Para que no lo pueda seleccionar*/
-    cursor: pointer;
     position: relative;
     padding: 0 10px;
+    background-image: url(../imgs/icono-unchecked.png);
+    background-position: 0 0;
+    background-size: 1.25em;
+    background-repeat: no-repeat;
+    padding-left: 2em;
 
-    /*Cambiar la viñeta*/
-    &::before{
-        content: '';
-        width: 0.5em;
-        height: 0.5em;
-        background-color: black;
-        border-radius: 50%;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-    }
+    animation: to-width 2s ease;
 
     /*Task checked*/
     &.checked{
         text-decoration: line-through;
-        
         /*Cambiar la viñeta cuando está checked*/
-        &::before{
-            background-color: green;
-        }
+        background-image: url(../imgs/icono-checked.png);
     }
 
 }
@@ -97,4 +106,25 @@ button{
     color: white;
 }
 
+.iconos{
+    max-width: 1.5em;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
 
+
+@media (max-width:834px){
+    .container{
+        display: flex;
+        flex-direction: column ;
+        min-height: fit-content;
+    }
+    .seccionTasks, .seccionToDo{
+        margin: 1em auto;
+    }
+
+    .font{
+        font-size: 10px;
+    }
+}
